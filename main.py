@@ -79,12 +79,6 @@ def game_start(con):
     screen = pygame.display.set_mode((1280, 720), 0, 32)
     pygame.display.set_caption('Card Game')
 
-    white = (255, 255, 255)
-    black = (0, 0, 0)
-    green = (0, 255, 0)
-    blue = (0, 0, 180)
-    red = (255, 0, 0)
-
     card_e = pygame.image.load('res/empty_card.png')
     card_1 = pygame.image.load('res/card_1.png')
     card_2 = pygame.image.load('res/card_2.png')
