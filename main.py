@@ -4,6 +4,7 @@ import random
 import pygame, sys
 from pygame.locals import *
 import sqlite3
+from getpass import getpass
 
 img_num = 0
 DragMode = True
@@ -64,7 +65,7 @@ def game_login(con, cursor):
     else:
         print("SignUp")
         _id = input("ID: ")
-        _pw = input("PW: ")
+        _pw = getpass("PW: ")
         if create_user(_id, _pw, con, cursor) == True:
             print("SignUp Success!!!")
         else:

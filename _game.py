@@ -3,6 +3,7 @@ import sys
 import random
 import operator
 import collections
+from getpass import getpass
 
 class Skill:
     _id = None
